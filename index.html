@@ -1,22 +1,47 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Haven at Birkdale Village</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
     <link rel="stylesheet" href="./dist/bundle.css">
-    <script src="./dist/bundle.js"></script>
   </head>
 
   <body>
     
-    <header>
-      <a class="nav-link">Floor Plans</a>
-      <a class="logo">Haven at Birkdale Village</a>
-      <a class="nav-link">Resident Login</a>
-      <a class="nav-link">404-123-4568</a>
+    <header class="header">
+      <div class="header-left">
+        <a class="nav-link">Floor Plans</a>
+      </div>
+      <a class="logo">
+        <img src="./src/images/Haven Logo Assets_Full Logo_Color.svg" />
+      </a>
+      <div class="header-right">
+        <a class="nav-link">Resident Login</a>
+        <a class="nav-link">404-123-4568</a>
+      </div>
+
+
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="navigation">
+        <div class="navigationList">
+          <img class="pocket-logo" src="./src/images/Haven Logo Assets_Horizontal Logo_White.svg" />
+          <a class="nav-link">Floor Plans</a>
+          <a class="nav-link">Resident Login</a>
+          <a class="nav-link">404-123-4568</a>          
+        </div>
+      </div>
     </header>
 
-    <section class="hero hero-primary">
-      <div class="container flex flex-centered">
-        <h1>Make Haven Home</h1>
+    <section class="hero hero-primary" style="background-image: url('./src/images/Hero_Image.jpg')">
+      <div class="overlay"></div>
+      <div class="container">
+        <h1 class="light">Make Haven Home</h1>
         <a class="button button-primary">Schedule a Tour</a>
       </div>
 
@@ -24,6 +49,8 @@
         <h2>Now Offering 5 Weeks Free!*</h2>
         <h3>Book Your In Person Or Virtual Tour Today! *Restrictions Apply.</h3>
       </div>
+
+      
     </section>
 
 
@@ -33,31 +60,39 @@
           Haven at Birkdale Village offers a collection of studio, one, two and three bedroom apartment homes designed with a singular focus. Our apartment home offer more than just a place to rest your head. Each floor plan has been carefully crafted to offer unparalled luxury, including high-end features such as chef-inspired kitchens and designer finishes. Haven residents have access to all of our grand cimmunity amenities, too, including the resort-style pool, grilling stations, fitness center and resident lounge, not to mention all the retail, restaurants, and entertainment right outside your home at Birkdale Village and everything around us.
         </p>
 
-        <h4>It's all right here at Haven at Birkdale Village</h4>
+        <h4>It's all right here at Haven at Birkdale Village.</h4>
 
-        <img src="/" alt="Birkdale Village Plant" />
+        <img class="leaves" src="./src/images/Leaves.jpg" alt="Birkdale Village Plant" />
 
-        <div>
-          Slider here
+        <div class="slider-wrapper">
+          <div class="slider">
+            <img src="./src/images/amenities 1.jpg" />
+            <img src="./src/images/amenities 2.jpg" />
+            <img src="./src/images/amenities 3.jpg" />
+            <img src="./src/images/amenities 4.jpg" />
+            <img src="./src/images/amenities 5.jpg" />
+          </div>
         </div>
 
         <h2>Take a Tour</h2>
         <p>
           Check out our perfectly curated apartment homes for yourself and discover which style suit you best.
-
-          <a class="button button-secondary">Schedule a Tour</a>
         </p>
+        <a class="button button-secondary">Schedule a Tour</a>
       </div>
     </section>
 
     <section class="features">
       <div class="container">
+
+        <!-- features -->
         <div class="row two-column-layout">
           <div class="col col-half">
-            <img class="graphic" src="/" alt="Kitchen" />
+            <div class="graphic" style="background-image: url('./src/images/Features.jpg')">
+            </div>
           </div>
           <div class="col col-half">
-            <h2>Features</h2>
+            <h2 class="mt-md">Features</h2>
             <ul>
               <li>Chef-inspired Kitchens with Stunning Quartz Coutertops, Upscale Cabinetry & Stainless Appliances</li>
               <li>Ceramic Tiled-Backsplash</li>
@@ -79,42 +114,89 @@
             </div>
           </div>
         </div>
+
+        <!-- Amenities -->
+        <div class="row two-column-layout centered-flex">
+          <div class="col col-half vertical-order-two">
+            <h2 class="mt-md mb-lg">Amenities</h2>
+            <ul>
+              <li>Resort-Style Swimming Pool with Sundeck</li>
+              <li>Poolside Grilling Stations, Hammock Garden & Cabanas</li>
+              <li>Resident Lounge with Entertainment Areas</li>
+              <li>Business Center with Printer</li>
+              <li>24-hour Fitness Center with Yoga, Cardio & Free Weight Equipment</li>
+              <li>Cyber Cafe</li>
+              <li>Dog Run & Open Green Spaces for Your and Your Furry Friends</li>
+              <li>Access to Walking and Biking Trails</li>
+              <li>Lush Landscaping Throughout</li>
+              <li>Car Care Center</li>
+              <li>Complimentary Coffee and Wi-Fi in Common Areas</li>
+              <li>24 Hour Onsite Maintenance</li>
+            </ul>
+          </div>
+          <div class="col col-half">
+            <div class="graphic" style="background-image: url('./src/images/Amenities.jpg')">
+            </div>
+          </div>
+        </div>
+
+        <!-- Floor Plans -->
+        <div class="row two-column-layout centered-flex"">
+          <div class="col col-half">
+            <div class="graphic" style="background-image: url('./src/images/Floor_Plan_Image.jpg')">
+            </div>
+          </div>
+          <div class="col col-half">
+            <h2 class="mt-md">Floor Plans</h2>
+            <p>
+              Haven at Birkdale Village offers many distinctive studio, one, two and three bedroom home options, all of which deliver the comforts of modern luxury. Our homes are designed to answer the wants and needs of every lifestyle at Birkdale Village. Select your Haven home from our floor plan offerings here.
+            </p>
+
+            <div class="button-wrapper">
+              <a class="button button-secondary">Pick Your Home</a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="contact">
+    <section class="contact green-bg">
       <div class="container">
         <div class="row">
-          <div class="col col-half">
-            <img src="/" alt="How can we help you" />
+          <div class="col col-half centered-content">
+            <img class="contact-image" src="./src/images/Haven Logo Assets_Full Logo_White.svg" alt="How can we help you" />
+            <h2 class="light">How can we help you?</h2>
           </div>
           <div class="col col-half">
-            <h2>Contact Us</h2>
-            <form>
+            <h2 class="light">Contact Us</h2>
+            <form post="/">
               <fieldset>
                 <div class="form-wrapper">
-                  <input type="text" name="name" id="name" placeholder="Name*" required />
-                  <label for="name">Name</label>
+                  <input type="text" name="name" id="name" placeholder="Name*" />
                 </div>
                 <div class="form-wrapper">
-                  <input type="email" name="email" id="email" placeholder="Email*" required />
-                  <label for="email">Name</label>
+                  <input type="email" name="email" id="email" placeholder="Email*" />
                 </div>
-                <div class="flex">
+                <div class="flex gap-sm">
                   <div class="form-wrapper wrapper-half">
-                    <input type="number" name="phone" id="phone" placeholder="Phone*" required />
-                    <label for="phone">Phone</label>
+                    <input type="number" name="phone" id="phone" placeholder="Phone*" />
                   </div>
                   <div class="form-wrapper wrapper-half">
-                    <input type="number" name="bedroom" id="bedroom" placeholder="Desired Bedroom*" required />
-                    <label for="bedroom">Desired Bedroom</label>
+                    <select name="bedroom" id="bedroom" placeholder="Desired Bedroom*">
+                      <option class="bold">Desired Bedroom</option>
+                      <option value="1">1 bedroom</option>
+                      <option value="2">2 bedroom</option>
+                      <option value="3">3 bedroom</option>
+                    </select>
                   </div>
                 </div>
                 <div class="form-wrapper">
-                  <textarea placeholder="Message*" />
+                  <textarea placeholder="Message*"></textarea>
                 </div>
 
-                <button class="button button-primary" type="submit">Send</button>
+                <div class="button-wrapper">
+                  <button class="button button-submit" type="submit">Send</button>
+                </div>
               </fieldset>
             </form>
           </div>
@@ -123,22 +205,34 @@
     </section>
 
     <footer>
-      <a class="footer-logo">Haven</a>
+      <div class="container">
 
-      <div className="address">
-        <span class="uppercase">Birkdale Village</span>
-        <span>16725 Birkdale Commons Pkwy</span>
-        <span>Huntersville, NC 28078</span>
-        <span>(704) 895-7895</span>
-      </div>
+        <a class="footer-logo">
+          <img src="./src/images/Haven Logo Assets_Horizontal Logo_White.svg"  alt="Haven at Birkdale Village" />
+        </a>
+        
+        <div class="address">
+          <span class="uppercase">Birkdale Village</span>
+          <span>16725 Birkdale Commons Pkwy</span>
+          <span>Huntersville, NC 28078</span>
+          <span>(704) 895-7895</span>
+        </div>
+        
+        <div class="footer-right">
+          <div class="socials">
+            <a class="social-link instagram"><i class="fa fa-instagram"></i></a>
+            <a class="social-link facebook"><i class="fa fa-facebook"></i></a>
+            <a class="social-link twitter"><i class="fa fa-twitter"></i></a>
+            <a class="social-link youtube"><i class="fa fa-youtube"></i></a>
+          </div>
 
-      <div class="socials">
-        <a class="social-link instagram">i</a>
-        <a class="social-link facebook">i</a>
-        <a class="social-link twitter">i</a>
-        <a class="social-link youtube">i</a>
+          <div class="uppercase fs1 copyright">Copyright 2020</div>
+        </div>
       </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="./dist/bundle.js"></script>
   </body>
 </html>
