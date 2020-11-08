@@ -1195,6 +1195,6 @@ button.button-submit, .button.button-submit {
   .graphic {
     margin: 0 30px;
     background-size: cover;
-    min-height: 500px;
+    min-height: 400px;
   }
 }
