@@ -430,7 +430,8 @@ header {
 .hamburger {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   cursor: pointer;
-  position: relative;
+  position: absolute;
+  right: 15px;
   height: 48px;
   width: 48px;
   background: transparent;
@@ -442,6 +443,9 @@ header {
   .hamburger {
     display: none;
   }
+}
+.hamburger.active {
+  right: 20px;
 }
 .hamburger.active .wrapper {
   transform: rotate(180deg);
