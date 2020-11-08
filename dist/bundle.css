@@ -730,6 +730,12 @@ footer .container {
   .hero .hero-banner {
     height: 150px;
   }
+  .hero .hero-banner h2 {
+    font-size: 1.4rem;
+  }
+  .hero .hero-banner h3 {
+    font-size: 1.2rem;
+  }
 }
 
 .hero-secondary .row {
