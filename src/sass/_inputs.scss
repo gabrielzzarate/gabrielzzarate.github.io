@@ -20,6 +20,7 @@ input, textarea, select {
   border: 0;
   height: 48px;
   line-height: 48px;
+  border-radius: 0;
   border-bottom: 2px solid #fff;
   color: #fff;
   margin-bottom: 15px;
@@ -42,7 +43,7 @@ input, textarea, select {
 }
 
 .gap-sm {
-  gap: 15px;
+  gap: 20px;
 }
 
 .bold {
