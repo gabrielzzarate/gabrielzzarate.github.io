@@ -7,9 +7,31 @@
   align-content: center;
   height: 340px;
   position: relative;
+  background: var(--grey);
+  transition: all 0.25s;
+
+  &:hover {
+    background: var(--green);
+    cursor: pointer;
+
+    button, a {
+      opacity: 0.8;
+    }
+  }
+
+  button, a {
+    &:hover {
+      background: var(--white);
+      color: var(--black);
+    }
+  }
 
   &:first-of-type {
     margin-top: 80px;
+  }
+
+  p {
+    line-height: 1.5rem;
   }
 
   @media screen and (max-width: 900px) {
@@ -23,7 +45,7 @@
   }
 
   &.grey {
-    background: var(--grey);
+    // background: var(--grey);
 
     .floor-plan-image {
       div {
@@ -39,11 +61,11 @@
   }
 
   &.green {
-    background: var(--green);
+    // background: var(--green);
 
     .floor-plan-image {
       div {
-        border-color: var(--green);
+        // border-color: var(--green);
       }
     }
 

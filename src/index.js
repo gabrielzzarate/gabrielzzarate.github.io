@@ -21,7 +21,7 @@ $(document).ready(function() {
   });
 
   $('.slider').slick({
-    infinite: false,
+    infinite: true,
     dots: true,
     autoplay: true,
     speed: 300,
@@ -30,4 +30,7 @@ $(document).ready(function() {
     arrows: false,
     cssEase: 'linear'
   });
+  
 });
+  
+  

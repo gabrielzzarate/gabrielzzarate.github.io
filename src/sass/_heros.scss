@@ -1,4 +1,12 @@
 
+.hero-primary {
+  margin-top: 230px;
+
+  & h1 {
+    color: var(--white);
+  }
+}
+
 .hero {
   width: 100%;
   min-height: 600px;
@@ -34,13 +42,6 @@
     text-align: center;
     z-index: 1;
     padding-bottom: 118px;
-  }
-
-  .hero-primary {
-
-    & h1 {
-      color: var(--white);
-    }
   }
 
   .hero-banner {

@@ -1,6 +1,14 @@
 
+body {
+  position: relative;
+}
 
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100000;
   height: 120px;
   background: var(--white);
   display: flex;
@@ -8,6 +16,7 @@ header {
   align-items: center;
   align-content: center;
   padding: 0 20px;
+  box-shadow: 0 2px 0 rgba(0,0,0,0.15);
 }
 
 .header {
@@ -190,7 +199,7 @@ header {
   text-transform: uppercase;
   letter-spacing: 0.24rem;
   color: var(--black);
-  transition: all 0.15s;
+  transition: color 0.15s;
   display: block;
   
   @media screen and (max-width: 900px) {
@@ -203,6 +212,7 @@ header {
   }
 
   &:hover {
+    font-weight: bold;
     opacity: 0.8;
   }
 }
