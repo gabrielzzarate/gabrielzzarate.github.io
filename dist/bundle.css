@@ -942,6 +942,11 @@ textarea {
   background: var(--grey);
   transition: all 0.25s;
 }
+@media screen and (max-width: 900px) {
+  .floor-plan {
+    gap: 0 !important;
+  }
+}
 .floor-plan:hover {
   background: var(--green);
   cursor: pointer;
