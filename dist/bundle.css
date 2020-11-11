@@ -1098,6 +1098,14 @@ section.green-bg {
   margin: 0 auto;
 }
 
+.slim-container {
+  max-width: 900px;
+}
+
+.centered-content p {
+  margin-bottom: 40px;
+}
+
 button, .button {
   display: block;
   max-width: 200px;
