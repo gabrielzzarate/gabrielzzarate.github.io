@@ -659,6 +659,10 @@ footer .container {
   opacity: 0.8;
 }
 
+.address:hover .address-details {
+  text-decoration: underline;
+}
+
 .socials {
   display: flex;
   gap: 8px;
@@ -889,6 +893,13 @@ input:focus, textarea:focus, select:focus {
 
 select {
   font-weight: bold;
+}
+@media not all and (min-resolution: 0.001dpcm) {
+  @media all {
+    select {
+      -webkit-appearance: none;
+    }
+  }
 }
 
 .wrapper-half {

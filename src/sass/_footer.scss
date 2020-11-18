@@ -47,6 +47,13 @@ footer {
   }
 }
 
+.address {
+  &:hover {
+    .address-details  {
+      text-decoration: underline;
+    }
+  }
+}
 
 .socials {
   display: flex;
