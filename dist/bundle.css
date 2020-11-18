@@ -564,7 +564,7 @@ header {
 }
 .logo img {
   width: 100%;
-  max-width: 120px;
+  width: 120px;
 }
 @media screen and (max-width: 900px) {
   .logo {
@@ -637,6 +637,10 @@ footer .container {
   }
 }
 
+.footer-logo {
+  max-width: 330px;
+  width: 100%;
+}
 .footer-logo img {
   max-width: 330px;
   width: 100%;
@@ -838,6 +842,7 @@ footer .container {
 .col.col-half {
   width: 50%;
   margin: 80px 0;
+  padding: 20px;
 }
 .col.col-half.adjusted {
   margin: 40px 0;
@@ -1045,6 +1050,9 @@ textarea {
 }
 .floor-plan .floor-plan-content {
   padding: 60px;
+  margin-top: 0;
+  display: flex;
+  align-items: center;
 }
 .floor-plan .floor-plan-content p {
   margin-bottom: 30px;
