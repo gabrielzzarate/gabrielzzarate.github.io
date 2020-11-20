@@ -29,9 +29,19 @@ $(document).ready(function () {
 		cssEase: 'linear',
 	});
 
-	$('.address').on('click', () => {
+	$('.address-details').on('click', () => {
 		window.open(
 			'https://www.google.com/maps/place/16725+Birkdale+Commons+Pkwy,+Huntersville,+NC+28078/data=!4m2!3m1!1s0x8856a926acaaf9b3:0x6112942d349be70?sa=X&ved=2ahUKEwi3hLvewYjtAhXiLX0KHej-BjsQ8gEwAHoECAUQAQ'
+		);
+	});
+	$('.navigation .contact-link').on('click', () => {
+		$('body').removeClass('fix-window');
+		$('header').removeClass('active');
+		$([document.documentElement, document.body]).animate(
+			{
+				scrollTop: $('#contact').offset().top,
+			},
+			1000
 		);
 	});
 });

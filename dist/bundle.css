@@ -679,6 +679,8 @@ footer .container {
   border-radius: 50%;
   background: var(--white);
   transition: 0.25s;
+  margin-right: 8px;
+  margin-bottom: 4px;
 }
 .socials .social-link i {
   color: var(--dk-green);
