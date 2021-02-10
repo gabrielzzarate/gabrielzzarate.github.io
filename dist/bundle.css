@@ -761,16 +761,20 @@ footer .container {
   bottom: 0;
   color: #fff;
   padding: 0 20px;
+  cursor: pointer;
+}
+.hero .hero-banner h2 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+.hero .hero-banner h3 {
+  font-size: 1.3rem;
+  text-decoration: underline;
 }
 @media screen and (max-width: 900px) {
   .hero .hero-banner {
     height: 150px;
-  }
-  .hero .hero-banner h2 {
-    font-size: 1.4rem;
-  }
-  .hero .hero-banner h3 {
-    font-size: 1.2rem;
   }
 }
 
